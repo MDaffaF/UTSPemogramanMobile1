@@ -7,13 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.utspemogramanmobile1.Login
 
 class SplashScreen : AppCompatActivity() {
-private val SPLASH_TIME_OUT: Long = 3000 // Delay 3 detik
+private val SPLASH_TIME_OUT: Long = 3000
 
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        // Delay sebelum memulai MainActivity
         Handler().postDelayed({
         val intent = Intent(this@SplashScreen, Login::class.java)
         startActivity(intent)
